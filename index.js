@@ -1,3 +1,5 @@
+//use this extension in order to fetch image on click
+//https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc/related
 const body = document.querySelector("body"),
   sidebar = body.querySelector("nav"),
   toggle = body.querySelector(".toggle"),
@@ -15,10 +17,7 @@ let image = document.getElementById("image");
 btn.addEventListener("click", function () {
   console.log("Fetching image");
   fetch(
-    "http://drive.google.com/uc?export=view&id=10_1Qxz1qlW9KxCALEJm-ZEBdZ5qwgxzz",
-    {
-      mode: "no-cors", // 'cors' by default
-    }
+    "http://drive.google.com/uc?export=view&id=10_1Qxz1qlW9KxCALEJm-ZEBdZ5qwgxzz"
   )
     .then((response) => {
       console.log(response);
