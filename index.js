@@ -15,7 +15,7 @@ let image = document.getElementById("image");
 btn.addEventListener("click", function () {
   console.log("Fetching image");
   fetch(
-    "http://drive.google.com/uc?export=view&id=0B6MDk0wmJtrPOXFKZXotUG5TeXM",
+    "http://drive.google.com/uc?export=view&id=10_1Qxz1qlW9KxCALEJm-ZEBdZ5qwgxzz",
     {
       mode: "no-cors", // 'cors' by default
     }
